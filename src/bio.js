@@ -29,7 +29,7 @@ function BioForm() {
                 inspiration
             ].join(' '); // Join all answers with a space. You can use '\n' for newline.
     
-            const response = await axios.post('http://3.14.70.71:5000/compare_bio', {
+            const response = await axios.post('http://backend:5000/compare_bio', {
                 bio: bioString // Send the aggregated string as 'bio'
             });
     
